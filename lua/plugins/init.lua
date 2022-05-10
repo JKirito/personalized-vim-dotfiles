@@ -5,8 +5,8 @@ return require('packer').startup(function()
   -- Theme
   use 'shaunsingh/nord.nvim'
 
-  -- Syntax highlighting 
-  use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'}
+  -- Syntax highlighting
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   -- for bottom status bar
   use {
@@ -14,8 +14,8 @@ return require('packer').startup(function()
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  -- for tabs 
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  -- for tabs
+  use { 'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons' }
 
   -- file explorer
   use {
@@ -29,7 +29,7 @@ return require('packer').startup(function()
   -- auto Tags
   use 'windwp/nvim-ts-autotag'
 
-  -- rainbow 
+  -- rainbow
   use 'p00f/nvim-ts-rainbow'
 
   -- auto-tags
@@ -37,20 +37,20 @@ return require('packer').startup(function()
 
   -- which key
   use {
-  "folke/which-key.nvim",
-  config = function()
-    require("which-key").setup {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    }
-  end
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
   }
 
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
   -- nvim cmp
@@ -68,5 +68,24 @@ return require('packer').startup(function()
 
   -- colorizer
   use 'norcalli/nvim-colorizer.lua'
+
+  -- git Blame for git lines
+  use {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+        require('gitsigns').setup {
+        current_line_blame = true
+      }
+    end
+  }
+
+  -- dashboard
+  use 'glepnir/dashboard-nvim'
+
+  -- indent lines
+  use 'lukas-reineke/indent-blankline.nvim'
+
+  -- formatting
+  use 'lukas-reineke/lsp-format.nvim'
 
 end)

@@ -62,7 +62,7 @@ nvim_lsp.emmet_ls.setup {
     debounce_text_changes = 150,
   },
   root_dir = function() return vim.loop.cwd() end,
-  filetypes = {'html','css','javascriptreact','typescriptreact'}
+  filetypes = {'html','css','scss','javascriptreact','typescriptreact'}
 }
 
 
