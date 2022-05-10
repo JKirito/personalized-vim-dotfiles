@@ -7,5 +7,6 @@ require('treesitter-config')
 require('nvim-tree-config')
 require('autopairs-config')
 require('whichkey-config')
+require('lsp')
 
 vim.cmd('colorscheme nord')
