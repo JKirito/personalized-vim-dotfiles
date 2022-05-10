@@ -69,6 +69,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -79,10 +84,30 @@ _G.packer_plugins = {
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "https://github.com/shaunsingh/nord.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    url = "https://github.com/windwp/nvim-ts-autotag"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
+    url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -93,10 +118,30 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["which-key.nvim"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0" },
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: which-key.nvim
+time([[Config for which-key.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\0", "config", "which-key.nvim")
+time([[Config for which-key.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

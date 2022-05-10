@@ -1,11 +1,55 @@
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+
+  -- Theme
   use 'shaunsingh/nord.nvim'
+
+  -- Syntax highlighting 
   use {'nvim-treesitter/nvim-treesitter',run = ':TSUpdate'}
+
+  -- for bottom status bar
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+  -- for tabs 
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
+  -- file explorer
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
+  -- auto Tags
+  use 'windwp/nvim-ts-autotag'
+
+  -- rainbow 
+  use 'p00f/nvim-ts-rainbow'
+
+  -- auto-tags
+  use 'windwp/nvim-autopairs'
+
+  -- which key
+  use {
+  "folke/which-key.nvim",
+  config = function()
+    require("which-key").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+  }
+
+  -- Telescope
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 end)
