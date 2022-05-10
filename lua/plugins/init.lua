@@ -66,4 +66,7 @@ return require('packer').startup(function()
   -- icons on snippets
   use 'onsails/lspkind.nvim'
 
+  -- colorizer
+  use 'norcalli/nvim-colorizer.lua'
+
 end)
