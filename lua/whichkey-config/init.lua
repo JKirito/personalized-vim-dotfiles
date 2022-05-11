@@ -29,12 +29,12 @@ local mappings = {
     t = {'<cmd>lua vim.lsp.buf.type_definition()<cr>','Type Definitions'},
     d = {'<cmd>lua vim.lsp.buf.definition()<cr>',"Go To Definitions"},
     D = {'<cmd>lua vim.lsp.buf.declaration()<cr>',"Go To Decleration"},
-    r = {'<cmd>lua vim.lsp.buf.references<cr>',"References"},
-    R = {'<cmd>lua vim.lsp.buf.rename()<cr>',"Rename"},
+    R = {'<cmd>lua vim.lsp.buf.references<cr>',"References"},
+    r = {'<cmd>lua vim.lsp.buf.rename()<cr>',"Rename"},
     a = {'<cmd>lua vim.lsp.buf.code_action()<cr>',"Code Actions"},
-    e = {'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<cr>',"Show Line Diagnostics"},
-    n = {'<cmd>lua vim.lsp.diagnostic.goto_next()<cr>',"Goto Next Diagnostic"},
-    N = {'<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>',"Goto Prev Diagnostics"},
+    e = {'<cmd>lua vim.diagnostic.show_line_diagnostics()<cr>',"Show Line Diagnostics"},
+    n = {'<cmd>lua vim.diagnostic.goto_next()<cr>',"Goto Next Diagnostic"},
+    N = {'<cmd>lua vim.diagnostic.goto_prev()<cr>',"Goto Prev Diagnostics"},
 
   }
 }
