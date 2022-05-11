@@ -22,3 +22,10 @@ map('n','<c-_>','<cmd>:CommentToggle<cr>',{noremap = true,silent = true})
 -- mapping escape
 --map('i','jk','<ESC>',{noremap = true,silent = false})
 --map('i','kj','<ESC>',{noremap = true,silent = false})
+
+-- general bindings
+map('n','<c-s>','<cmd>w<cr>',{noremap = true,silent = false})
+
+-- lsp keybinds
+--map('n','<c-s>','<cmd>lua vim.lsp.buf.code_action()<cr>',{noremap = true,silent = false})
+--map('n','<M-t>','<cmd>lua vim.lsp.buf.type_definition()<cr>',{noremap = false,silent = false})
