@@ -86,6 +86,12 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
 
   -- formatting
-  use 'lukas-reineke/lsp-format.nvim'
+  --use 'lukas-reineke/lsp-format.nvim'
+
+  use {"akinsho/toggleterm.nvim", tag = 'v1.*'}
+
+  --comment plugin
+  use 'terrortylor/nvim-comment'
+
 
 end)

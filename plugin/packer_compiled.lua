@@ -115,11 +115,6 @@ _G.packer_plugins = {
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
-  ["lsp-format.nvim"] = {
-    loaded = true,
-    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
-    url = "https://github.com/lukas-reineke/lsp-format.nvim"
-  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -149,6 +144,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -194,6 +194,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,

@@ -10,6 +10,8 @@ require('whichkey-config')
 require('colorizer-config')
 require('dashboard-config')
 require('blankline-config')
+require('toggleterm-config')
+require('comment-config')
 
 -- optionals
 --require('format-config')
