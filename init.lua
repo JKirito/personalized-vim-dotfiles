@@ -12,7 +12,7 @@ require('dashboard-config')
 require('blankline-config')
 require('toggleterm-config')
 require('comment-config')
-
+require('lspsaga-config')
 -- optionals
 --require('format-config')
 

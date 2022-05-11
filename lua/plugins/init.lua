@@ -93,5 +93,7 @@ return require('packer').startup(function()
   --comment plugin
   use 'terrortylor/nvim-comment'
 
+  use {'tami5/lspsaga.nvim'} -- nightly
+
 
 end)
