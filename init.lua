@@ -1,6 +1,7 @@
 require('plugins')
 require('bindings')
 require('options')
+require('gitsigns-config')
 require('lualine-config')
 require('bufferline-config')
 require('treesitter-config')

@@ -4,6 +4,8 @@ return require('packer').startup(function()
 
   -- Theme
   use 'shaunsingh/nord.nvim'
+  -- use {'sonph/onehalf', rtp = 'vim', config = function() vim.cmd [[colorscheme onehalfdark]] end, event = 'VimEnter' }
+  --use { 'rose-pine/neovim', config = "vim.cmd('colorscheme rose-pine')" }
 
   -- Syntax highlighting
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
@@ -72,11 +74,11 @@ return require('packer').startup(function()
   -- git Blame for git lines
   use {
     'lewis6991/gitsigns.nvim',
-    config = function()
-        require('gitsigns').setup {
-        current_line_blame = true
-      }
-    end
+    -- config = function()
+        -- require'gitsigns'.setup {
+        -- current_line_blame = true
+      -- }
+    -- end
   }
 
   -- dashboard
