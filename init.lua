@@ -13,6 +13,7 @@ require('blankline-config')
 require('toggleterm-config')
 require('comment-config')
 require('lspsaga-config')
+require('telescope-config')
 -- optionals
 --require('format-config')
 

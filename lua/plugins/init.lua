@@ -95,7 +95,7 @@ return require('packer').startup(function()
 
   use {'tami5/lspsaga.nvim'} -- nightly
 
-  use 'williamboman/nvim-lsp-installer'
+  --use 'williamboman/nvim-lsp-installer'
 
 
 end)
