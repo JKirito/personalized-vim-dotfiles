@@ -25,6 +25,7 @@ map('n','<c-_>','<cmd>:CommentToggle<cr>',{noremap = true,silent = true})
 
 -- general bindings
 map('n','<c-s>','<cmd>w<cr>',{noremap = true,silent = false})
+map('i','<c-s>','<cmd>w<cr>',{noremap = true,silent = false})
 
 -- lsp keybinds
 --map('n','<c-s>','<cmd>lua vim.lsp.buf.code_action()<cr>',{noremap = true,silent = false})
