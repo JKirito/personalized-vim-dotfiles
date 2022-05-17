@@ -4,6 +4,7 @@ return require('packer').startup(function()
 
   -- Theme
   use 'shaunsingh/nord.nvim'
+  use 'tomasr/molokai'
   -- use {'sonph/onehalf', rtp = 'vim', config = function() vim.cmd [[colorscheme onehalfdark]] end, event = 'VimEnter' }
   --use { 'rose-pine/neovim', config = "vim.cmd('colorscheme rose-pine')" }
 

@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  molokai = {
+    loaded = true,
+    path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/molokai",
+    url = "https://github.com/tomasr/molokai"
+  },
   ["nord.nvim"] = {
     loaded = true,
     path = "/home/jkirito/.local/share/nvim/site/pack/packer/start/nord.nvim",

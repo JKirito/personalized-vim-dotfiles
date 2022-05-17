@@ -42,7 +42,7 @@ end
 --  }
 --}
 -- python servers can be pylsp or pyright
-local lang_servers = {'html','cssls','pylsp','cmake','bashls','tsserver','sumneko_lua','ccls','hls','emmet_ls'}
+local lang_servers = {'html','cssls','pylsp','cmake','bashls','tsserver','sumneko_lua','ccls','hls','emmet_ls','tailwindcss'}
 
 for _, server in ipairs(lang_servers) do
   nvim_lsp[server].setup {
@@ -63,7 +63,7 @@ nvim_lsp.emmet_ls.setup {
     debounce_text_changes = 150,
   },
   root_dir = function() return vim.loop.cwd() end,
-  filetypes = {'html','css','scss','javascriptreact','typescriptreact'}
+  filetypes = {'html','javascriptreact','typescriptreact'}
 }
 
 -- -- New Config Using NvimLspInstaller ( Not that good liked it but not worth it, make extra complications )

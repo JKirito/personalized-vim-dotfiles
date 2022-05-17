@@ -20,4 +20,5 @@ require('telescope-config')
 
 require('lsp')
 
-vim.cmd('colorscheme nord')
+-- vim.cmd('colorscheme nord')
+vim.cmd('colorscheme molokai')
